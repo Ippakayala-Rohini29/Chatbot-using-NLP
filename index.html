@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chat Boy — AI Chatbot (Chat Only)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <div class="avatar">🤖</div>
+      <div>
+        <h1>Chat Boy</h1>
+        <p class="sub">Ask anything — friendly chat assistant</p>
+      </div>
+    </header>
+
+    <section id="chatWindow" class="chat-window" aria-live="polite"></section>
+
+    <form id="chatForm" class="chat-form" autocomplete="off">
+      <input id="userInput" type="text" placeholder="Type your message..." />
+      <button type="submit" id="sendBtn">Send</button>
+    </form>
+
+    <footer class="footer">
+      <small>Tip: Try questions like “What is AI?” or “Tell me a joke.”</small>
+    </footer>
+  </main>
+
+  <template id="tpl-message">
+    <div class="message">
+      <div class="bubble"></div>
+      <time class="time"></time>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
